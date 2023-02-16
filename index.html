@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tag give description as it is to google for better search engine optimisation. -->
+    <title>Implementation of HTML</title>
+    <!-- 
+        Adding a fevicon 
+            1.It show in the tab as a icon.
+            2.use link tag,it is connecting between document with external resource.
+    -->
+    <link rel="icon" type="image/x-icon" href="image_crop_output.jpg">
+</head>
+
+<body> 
+    <!-- heading tag --6 types of heading tag found -->
+    <h1>Chalo Web Development Sikhte hai</h1>
+
+    <!-- image show with link  -->
+    <!-- Alt is alternative and it provide of description of source -->
+    <img src="https://www.gettyimages.in/photos/paneer" alt="Work Harder" width="1000" height="1000">
+
+    <!--in anker tag after href if i use target="blank" then a new 
+        tab open and all operation performed in new tab
+     -->
+    <a href="https://www.linkedin.com/in/chandan-kumar-singh-1st-300063200/" target="blank"><h3>Visit my Linkedin Profile</h3></a>
+    <!-- call me using anker tag -->
+    <a href="tel: +916205580691" >Call me</a><br>
+    <a href="mailto: cs.sde07@gmail.com">Email</a><br>
+
+    <!-- Go to direct at specific line and pragraph with smooth scroll -->
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <nav>
+        <a href="#wiki"><strong><i>Go to Wikipedia page</i></strong></a><br>
+        <a href="#bio"><strong><i>Go to Biography page</i></strong></a>   
+    </nav>
+
+    <hr>
+    <p>Amit is good guy's</p>
+    <!-- br tag to use break the line -->
+    <!-- Nested break -->
+    <p>Good guy's is Amit</p>
+
+    <!-- hr tag to use draw horizontal line  -->
+    <hr>
+
+    <!-- pre tag to use write same as you write and wish to show -->
+    <pre>
+        hello kaise ho 
+        chalo milte horizontal
+        kab miloge
+    </pre>
+    <hr>
+    <!-- inline css  -->
+    <p style="color: red"> Hello baby kaise ho ap</p>
+    <p style="color: blue"> Hello baby kaise ho ap</p>
+    <p style="background:yellow"> Hello baby kaise ho ap</p>
+    <hr>
+
+    <!-- formatting bold italic strike  -->
+    <b>chalo party karte hai</b><br>
+    <!-- del tag to strikethough of word  -->
+    <b><del>No way</del><br>#Bycotte kardenge urvi ke kamariya ko</b><br>
+    <i><del>Patna me zoo kha hai</del></i><br>
+    <small>How are you</small><br>
+    <strong>F9</strong>
+    <hr>
+
+    <!-- script and superscript to write (x^2 + y^2 = z^2)-->
+    <p>x<sup>2</sup>+y<sup>2</sup>=z<sup>2</sup></p>
+    <hr>
+    
+    <!--
+        List is of 3 type 
+        1. ordered list 
+        2. unorderd list 
+        3. description list
+    -->
+    <ul>
+        <li>Paneer</li>
+        <li>Chicken biryani</li>
+        <li>Mutton</li>
+            <ol>
+                <li>Paneer</li>
+                <li>Chicken biryani</li>
+                <li>Mutton</li>
+            </ol>
+    </ul>
+    <dl>
+        <dt>Energy</dt>
+        <dt>Power</dt>
+    </dl>
+    <hr>
+
+    <!-- <table> tag <tr> tag represent table row and <td> tag present table data -->
+        <style>
+            table,td,tr,th{
+                border: 1px solid black;
+                border-collapse:collapse;
+                text-align: center;
+                caption-side:bottom;
+            }
+        </style>
+
+    <!-- Table look like -->
+    <table>
+        <colgroup>
+            <!-- span tag is used for styling a specific column in table -->
+            <col span="2" style="background-color:aqua">
+            <col span="" style="background-color:yellow">
+            <!-- For hide a specific column in table use visibility attribute -->
+            <col span="" style="visibility:collapse">
+            <col span="" style="background-color:aqua">
+        </colgroup>
+        <!-- caption tag is used for write table name -->
+        <caption>
+            My Income chat
+        </caption>
+        <thead>
+            <tr>
+                <!-- 
+                    colspan and rowspan is used for expend the box size of row and column 
+                -->
+                <td colspan="2">Month</td>
+                <td rowspan="2">Income</td>
+                <td>Source</td>
+            </tr>
+        </thead>
+        <!-- thead,tbody,tfoot is use in when talk about summation table -->
+        <tbody>
+            <tr>
+                <td>Jan</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Feb</td>
+                <td>15000</td>
+            </tr>
+            <tr>
+                <td>Mar</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>15000</td>
+            </tr>
+            <tr>
+                <td>May</td>
+                <td>20000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>80000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+    <!-- Form 
+        input tag is used to create in form.
+    -->
+    <h2>Welcome in our Imagination world</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" class ="username" id="username" placeholder="Enter Your Name" ><br><br>
+        <label for="password">Password:</label>
+        <input type="password" class ="password" id="password" placeholder="Enter Your Password" >
+    </form>
+
+    <!-- 
+        To create bookmark
+        Refer to specific line on page
+        There are two type 1st id(#) refer for specific line and 
+        2nd is Class(.) refer for specific class 
+    -->
+    <h2 id="bio">Biography</h2>
+    <p>
+        My name is Chandan Kumar Singh and i am from madhubani,bihar. 
+        I am currently pursuing my bachelor's degree in computer science at motihari college of engineering Motihari. 
+        Early in my school life, I recognized my interset in Developer. 
+        I belive that a single line of code make impact on thousand of peoples that's why i persued this field. 
+        During the Four Years of my college,I have done 2 major project and 3 minor project. 
+        I work efficiently both as an individual contributor as well as along with a team. 
+        Apart from coding I am also a President of the coding club of my college and have Organised a couple 
+        of Hackthon and event in College along with my team. 
+        If I had to describe myself in one word,it would be DYNAMIC 
+        as i accept challenge with a positive spirit,and I am always eager to learn. 
+        Apart from work I am a photographer, Travelers, Coders and love to Playing Cricket.
+    </p><hr>
+
+    <!-- div tag is also known as division tag
+        It is generic container,uses anywhere.
+        div uses as a block.
+        class excess by dot(.) and id excess by #.
+    -->
+    <style>
+        .divclass{
+            background-color: aqua;
+        }
+        #firstid{
+            background-color: yellow;
+        }
+    </style>
+    <div class="divclass">
+        You are Golu,fit for everywhere.
+        I am not intrested in you
+    </div>
+    <div id="firstid">
+        Go,Go, i am looking to you.
+    </div><hr>
+
+    <!-- span tag is also work as div tag only diff is 
+        div is work on seprate line while
+        span is work on same line
+        it is inline element
+        Note: 
+            1.if we block display in span tag then span will use as div tag.
+            2. span and div tag are non-semantic tag.
+    -->
+    <style>
+        span{
+            background-color: aqua;
+        }
+    </style>
+    <span>
+        Hii,you come to college.
+    </span>
+    <span>
+        No,today i am busy and going to market to buy a chair.
+    </span><hr>
+
+    <!-- Semantic tag provide meaning
+        1.section: define the section in your document.
+        2.article: use in specific article in document.
+        3.aside: add extra and important point,related to indirectly surrounding info in right,left.
+        4.figcaption
+        5.figure
+        6.header: use in define introductory part of web page.
+        7.footer: use in define extra inforamtion,exist at below of web page.
+        8.nav: use in accumulate more than two anker tag.
+            ALL USED IN PORTFOLIO WEBSITE
+    -->
+
+    <p id="wiki"><h2>Wikipedia</h2></p>
+    <!-- Use of iframe
+        1.other website embedded on own website.
+        2.scrollable,full permissable
+        3.all website does't allow to embedded as like google. 
+    -->
+    <iframe src="https://www.wikipedia.org/" height="500" 
+     frameborder="0"  width="1900"><p id="wiki"></iframe><hr>
+
+    <!-- Add audio and video in html -->
+        
+</body>
+</html>
