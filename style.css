@@ -1,0 +1,62 @@
+h3{
+    text-shadow: 1px 2px 3px yellowgreen;
+}
+.hello{
+    width: 700px;
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 1000px;
+}
+#world{
+    width: 0.1%;
+    height:0.1%;
+    margin:250px;
+    margin-top: 0px;
+}
+.rod{
+    width: 1px;
+    height:500px;
+    border:1px solid black;
+    margin-left: 1000px;
+    background-color: black;
+}
+.foot{
+    width:400px;
+    height:100px;
+    border: 1px solid black;
+    margin-left: 800px;
+    background-color: orange;
+}
+.leg{
+    width:600px;
+    height: 100px;
+    border:1px solid black;
+    background-color: white;
+    margin-left: 700px;
+}
+.cs{
+    width:800px;
+    height:100px;
+    border: 1px solid black;
+    background-color: green;
+    margin-left: 600px;
+}
+
+#top{
+    background-color:orange;
+}
+#middle{
+    background-color:white;
+}
+#bottom{
+    background-color: green;
+}
+/* 
+    COLOR
+        1. Hexadecimal color:-(00 to ff)(__,__,__)2dice indicate Red,next two Green and final two BlUE
+        2. RGB:- rgb(__,__,__) function
+        3. Predefined/cross color name:- 140 color predifned
+        4. RGBA color
+        5. HSL color
+        6. HSLA color
+*/
